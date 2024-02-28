@@ -1,5 +1,5 @@
 body {
-    background-color: burlywood;
+    background-color: azure;
     
 }
 
@@ -10,7 +10,7 @@ ul {
 li {
     border: 1px solid black;
     width: 100px;
-    background-color: bisque;
+    background-color: beige;
     display: inline;
     margin: 0px 5px;
     padding: 3px;
