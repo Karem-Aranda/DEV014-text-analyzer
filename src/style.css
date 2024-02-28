@@ -1,0 +1,19 @@
+body {
+    background-color: burlywood;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border: 1px solid black;
+    width: 100px;
+    background-color: bisque;
+    display: inline;
+    margin: 0px 5px;
+    padding: 3px;
+}
+
+
