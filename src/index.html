@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analizador de texto</title>
-
-    <h1>Analizador de textos </h1>
-
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
+  <header > 
+      <h1>Analizador de textos </h1>  
+  </header>
   <ul>
-      <li> Caracteres: </li> 
-      <li> Caracteres sin espacios: </li> 
-      <li> Palabras: </li>
-      <li> Números: </li> 
-      <li> Suma de números: </li>
-      <li> Promedio Longitud: </li>
+      <li data-testid="word-count"> Caracteres: </li> 
+      <li data-testid="character-count"> Caracteres sin espacios: </li> 
+      <li data-testid="character-no-spaces-count"> Palabras: </li>
+      <li data testid="number-count"> Números: </li> 
+      <li data-testid="number-sum"> Suma de números: </li>
+      <li data-testid="word-length-average"> Promedio Longitud: </li>
   </ul>
-
   <form>
-      <textarea name="text" cols="32" rows="8" placeholder="Escribe aqui"></textarea>
+      <textarea id="textarea" name="user-input" cols="32" rows="8" placeholder="Escribe aqui"></textarea>
       <button type="reset">Limpiar texto</button>
   </form>
-
   <footer>
     <p>
-      Autor: Karem Arely Aranda
+      Autor: DEV014 - Karem Aranda
     </p>
   </footer>
+  <script src="index.js" type="module"></script>
 </body>
 </html>
