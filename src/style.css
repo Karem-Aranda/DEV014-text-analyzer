@@ -10,20 +10,18 @@ text-align: center;
 }
 
 
-
-
-
 body {
+
     background-color: azure;
-    
+
 }
 
 ul {
     list-style: none;
+    text-align: center;
 }
 
-li,
-.special {
+.word {
     border: 1px solid black;
     width: 100px;
     background-color: beige;
@@ -33,3 +31,25 @@ li,
 }
 
 
+
+textarea[name="user-input"]
+    {
+    vertical-align: top;
+    background-color: rgb(143, 242, 242);
+}
+
+ #limpiarTexto {
+background-color:beige;
+
+}
+
+
+footer {
+    
+    background-color: aqua;
+    padding: 2em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}

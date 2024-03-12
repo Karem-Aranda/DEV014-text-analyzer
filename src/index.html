@@ -8,25 +8,34 @@
 </head>
 <body>
   <header > 
-      <h1>Analizador de textos </h1>  
+      <h1>Text Analyzer</h1>  
   </header>
   <ul>
-      <li data-testid="word-count"> Caracteres: </li> 
-      <li data-testid="character-count"> Caracteres sin espacios: </li> 
-      <li data-testid="character-no-spaces-count"> Palabras: </li>
-      <li data testid="number-count"> Números: </li> 
-      <li data-testid="number-sum"> Suma de números: </li>
-      <li data-testid="word-length-average"> Promedio Longitud: </li>
+
+      <li class="word" data-testid="word-count">Palabras: </li> 
+      <li class="word" data-testid="character-count">Caracteres: </li> 
+      <li class="word" data-testid="character-no-spaces-count">Caracteres sin espacios: </li>
+      <li class="word" data-testid="number-count">Números: </li> 
+      <li class="word" data-testid="number-sum">Suma de números: </li>
+      <li class="word" data-testid="word-length-average">Promedio Longitud De Palabra: </li>
   </ul>
   <form>
-      <textarea id="textarea" name="user-input" cols="32" rows="8" placeholder="Escribe aqui"></textarea>
-      <button type="reset">Limpiar texto</button>
+      <textarea name="user-input" cols="32" rows="8" placeholder="Escribe aqui"></textarea>
+      <button id= "limpiarTexto" type="reset">Limpiar texto</button>
   </form>
   <footer>
     <p>
       Autor: DEV014 - Karem Aranda
     </p>
   </footer>
-  <script src="index.js" type="module"></script>
+
+
+
+  <script src="index.js" type="module">  
+
+
+  </script>
 </body>
 </html>
+
+
