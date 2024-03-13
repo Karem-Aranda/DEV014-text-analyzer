@@ -1,51 +1,52 @@
 const analyzer = {  
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const numeroDePalabras = text.split(' ').filter((palabra) => {
-      if (palabra !== "") {
-        return palabra;
-      }
-    }).length;
+    const numeroDePalabras = text.split(' ').filter((palabra) => palabra !== "").length; //filter se usa para filtrar con una condicion ya que debe retornar
 
     return numeroDePalabras;
   },
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
     const numeroDeCaracteres = text.length;
 
     return numeroDeCaracteres;
   },
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    const numeroDeCaracteresSinSimbolos = text.trim().replace(/[^A-Z0-9]+/ig, "").length;
+    const numeroDeCaracteresSinSimbolos = text.trim().replace(/[^A-Z0-9]+/ig, "").length; // Deja unicamente palabras y numeros, y regresa su longitud
 
     return numeroDeCaracteresSinSimbolos;
   },
   getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const numeroDeCaracteres = text.length;
-    const numeroDePalabras = text.trim().split(/\s+/).length;
-    const promedio = numeroDeCaracteres / numeroDePalabras;
+    const palabras = text.split(" ");
+    const longitudDePalabras = palabras.filter((palabra) => palabra !== "").join("").length;
+  
+    const promedioDeLongitud = longitudDePalabras / palabras.length;
 
-    return promedio.toFixed(2);
+    return parseFloat(promedioDeLongitud.toFixed(2));
   },
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const cantidadDeNumeros = text.trim().replace(/[^\d]/g, '').length;
+    const cantidadDeNumeros = text.split(' ').filter(palabra => {
+      if (palabra.endsWith('.')) { // Limpiamos las palabras en caso de que terminen en punto
+        palabra = palabra.replace(".", ""); 
+      }
+      return !isNaN(palabra) && palabra !== "";  // Evaluamos si la palabra es un numero con isNotANumber
+    }).length;
 
     return cantidadDeNumeros;
   },
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const numeros = text.trim().replace(/[^\d]/g, '').split('');
+    let suma = 0;
+  
+    const numeros = text.split(' ').filter(palabra => {
+      if (palabra.endsWith('.')) { // Limpiamos las palabras en caso de que terminen en punto
+        palabra = palabra.replace(".", "");
+      }
+      return !isNaN(palabra) && palabra !== ""; // Evaluamos si la palabra es un numero con isNotANumber
+    });
 
-    let total = 0;
-
-    for(let i = 0; i < numeros.length; i++) {
-      total = total + parseInt(numeros[i]);
+    for (let i = 0; i < numeros.length; i++) { // Sumamos la lista de numeros
+      suma += parseFloat(numeros[i]);
     }
 
-    return total;
+    return suma;
   },
 };
 

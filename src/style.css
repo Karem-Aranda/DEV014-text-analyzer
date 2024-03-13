@@ -1,6 +1,6 @@
 header {
    min-height:10px;
-   background-color: rgb(143, 242, 242);
+   background-color:#009975 ;
    padding: 5px 20px;
 }
 
@@ -12,7 +12,8 @@ text-align: center;
 
 body {
 
-    background-color: azure;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/020/617/567/non_2x/single-continuous-line-drawing-of-hand-writing-gesture-with-ink-and-quill-pen-on-whiteboard-retro-handwriting-concept-trendy-one-line-draw-graphic-design-illustration-vector.jpg") 
+
 
 }
 
@@ -24,7 +25,7 @@ ul {
 .word {
     border: 1px solid black;
     width: 100px;
-    background-color: beige;
+    background-color: #fdddca;
     display: inline;
     margin: 0px 5px;
     padding: 3px;
@@ -35,18 +36,18 @@ ul {
 textarea[name="user-input"]
     {
     vertical-align: top;
-    background-color: rgb(143, 242, 242);
+    background-color:#fdddca;
 }
 
- #limpiarTexto {
-background-color:beige;
+ #reset-button {
+background-color:#fdddca;
 
 }
 
 
 footer {
     
-    background-color: aqua;
+    background-color: #009975;
     padding: 2em 0;
     text-align: center;
     position: absolute;
