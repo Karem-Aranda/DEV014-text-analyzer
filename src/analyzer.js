@@ -1,9 +1,9 @@
-const analyzer = {  
+const analyzer = {   // ⁠trim() quita los espacios de los textos
   getWordCount: (text) => {
     const numeroDePalabras = text.split(' ').filter((palabra) => palabra !== "").length; //filter se usa para filtrar con una condicion ya que debe retornar
 
     return numeroDePalabras;
-  },
+  }, //split() corta un texto dependiendo lo que pases como parámetros, te regresa una lista
   getCharacterCount: (text) => {
     const numeroDeCaracteres = text.length;
 
@@ -20,7 +20,7 @@ const analyzer = {
   
     const promedioDeLongitud = longitudDePalabras / palabras.length;
 
-    return parseFloat(promedioDeLongitud.toFixed(2));
+    return parseFloat(promedioDeLongitud.toFixed(2)); //toFixed() para poner cuantos decimales tienes 
   },
   getNumberCount: (text) => {
     const cantidadDeNumeros = text.split(' ').filter(palabra => {
@@ -44,7 +44,7 @@ const analyzer = {
 
     for (let i = 0; i < numeros.length; i++) { // Sumamos la lista de numeros
       suma += parseFloat(numeros[i]);
-    }
+    } //parseFloat()  para convertir un número, o un string, a números con decimales
 
     return suma;
   },
