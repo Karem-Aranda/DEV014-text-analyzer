@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de texto</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header > 
+      <h1>Text Analyzer</h1>  
+  </header>
+  <ul>
+
+      <li class="word" data-testid="word-count">Palabras: </li> 
+      <li class="word" data-testid="character-count">Caracteres: </li> 
+      <li class="word" data-testid="character-no-spaces-count">Caracteres sin espacios: </li>
+      <li class="word" data-testid="number-count">Números: </li> 
+      <li class="word" data-testid="number-sum">Suma de números: </li>
+      <li class="word" data-testid="word-length-average">Promedio Longitud De Palabra: </li>
+  </ul>
+  <form>
+      <textarea name="user-input" cols="32" rows="8" placeholder="Escribe aqui"></textarea>
+     
+      <button id="reset-button" type="reset">Limpiar texto</button> 
+  </form>
+  <footer>
+    <p>
+      Autor: DEV014 - Karem Aranda
+    </p>
+  </footer>
+
+
+
+  <script src="index.js" type="module">  
+
+
+  </script>
+</body>
+</html>
+
+
